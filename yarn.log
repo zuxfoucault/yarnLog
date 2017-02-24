@@ -1,27 +1,25 @@
 
 
-Container: container_1487755820093_0001_01_000004 on cn1_44479
+Container: container_1487951242053_0001_01_000001 on big_50641
 ================================================================
 LogType:stderr
-Log Upload Time:Wed Feb 22 17:34:31 +0800 2017
-LogLength:49428
+Log Upload Time:Fri Feb 24 23:51:37 +0800 2017
+LogLength:11156
 Log Contents:
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/10/__spark_libs__8665819482321133873.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/13/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-2017-02-22 17:33:47,396 INFO (MainThread-23856) TFSparkNode.reserve: {'authkey': UUID('ffa9ed4b-bcb6-4c8d-8ece-c03d430e7d97'), 'worker_num': 0, 'host': 'cn1', 'tb_port': 0, 'addr': ('cn1', 47320), 'ppid': 23841, 'task_index': 0, 'job_name': 'ps', 'tb_pid': 0, 'port': 35375}
-17/02/22 17:33:47 ERROR Executor: Exception in task 1.0 in stage 0.0 (TID 1)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+[Stage 0:>                                                         (0 + 1) / 20][Stage 0:==>                                                       (1 + 1) / 20]17/02/24 23:51:05 WARN TaskSetManager: Lost task 1.0 in stage 0.0 (TID 1, big, executor 2): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
   File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
     process()
   File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
     serializer.dump_stream(func(split_index, iterator), outfile)
   File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
     return f(iterator)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 88, in _reserve
-Exception: TFManager already started on cn1, ppid=23841, state='running'
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
 
 	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
 	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
@@ -32,20 +30,19 @@ Exception: TFManager already started on cn1, ppid=23841, state='running'
 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
 	at org.apache.spark.scheduler.Task.run(Task.scala:99)
 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:33:58,038 INFO (MainThread-23885) TFSparkNode.reserve: {'authkey': UUID('deb31056-3056-4782-9b7a-e2e9c681c4b3'), 'worker_num': 2, 'host': 'cn1', 'tb_port': 0, 'addr': '/tmp/pymp-OBhy9y/listener-3PaweO', 'ppid': 23841, 'task_index': 1, 'job_name': 'worker', 'tb_pid': 0, 'port': 54422}
-17/02/22 17:33:58 ERROR Executor: Exception in task 1.1 in stage 0.0 (TID 3)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+
+17/02/24 23:51:15 WARN TaskSetManager: Lost task 1.1 in stage 0.0 (TID 3, big, executor 2): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
   File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
     process()
   File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
     serializer.dump_stream(func(split_index, iterator), outfile)
   File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
     return f(iterator)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 88, in _reserve
-Exception: TFManager already started on cn1, ppid=23841, state='running'
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
 
 	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
 	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
@@ -56,20 +53,19 @@ Exception: TFManager already started on cn1, ppid=23841, state='running'
 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
 	at org.apache.spark.scheduler.Task.run(Task.scala:99)
 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:08,188 INFO (MainThread-23914) TFSparkNode.reserve: {'authkey': UUID('d0d931d9-fc02-4712-a97b-10dd1bcb01e2'), 'worker_num': 3, 'host': 'cn1', 'tb_port': 0, 'addr': '/tmp/pymp-31XYNI/listener-uKkpZA', 'ppid': 23841, 'task_index': 2, 'job_name': 'worker', 'tb_pid': 0, 'port': 40020}
-17/02/22 17:34:08 ERROR Executor: Exception in task 1.2 in stage 0.0 (TID 5)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+
+[Stage 0:=====>                                                    (2 + 1) / 20]17/02/24 23:51:25 WARN TaskSetManager: Lost task 1.2 in stage 0.0 (TID 5, big, executor 2): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
   File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
     process()
   File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
     serializer.dump_stream(func(split_index, iterator), outfile)
   File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
     return f(iterator)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 88, in _reserve
-Exception: TFManager already started on cn1, ppid=23841, state='running'
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
 
 	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
 	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
@@ -80,146 +76,19 @@ Exception: TFManager already started on cn1, ppid=23841, state='running'
 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
 	at org.apache.spark.scheduler.Task.run(Task.scala:99)
 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:18,319 INFO (MainThread-23942) TFSparkNode.reserve: {'authkey': UUID('966dce8c-31c0-4b2a-8bb4-1e2b52891913'), 'worker_num': 1, 'host': 'cn1', 'tb_port': 0, 'addr': '/tmp/pymp-WEWXmy/listener-I7AUzv', 'ppid': 23841, 'task_index': 0, 'job_name': 'worker', 'tb_pid': 0, 'port': 57336}
-2017-02-22 17:34:18,500 INFO (MainThread-23942) node: {'addr': ('cn1', 47320), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('ffa9ed4b-bcb6-4c8d-8ece-c03d430e7d97'), 'worker_num': 0, 'host': 'cn1', 'ppid': 23841, 'port': 35375, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:18,500 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-WEWXmy/listener-I7AUzv', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('966dce8c-31c0-4b2a-8bb4-1e2b52891913'), 'worker_num': 1, 'host': 'cn1', 'ppid': 23841, 'port': 57336, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:18,500 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-OBhy9y/listener-3PaweO', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('deb31056-3056-4782-9b7a-e2e9c681c4b3'), 'worker_num': 2, 'host': 'cn1', 'ppid': 23841, 'port': 54422, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:18,501 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-31XYNI/listener-uKkpZA', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('d0d931d9-fc02-4712-a97b-10dd1bcb01e2'), 'worker_num': 3, 'host': 'cn1', 'ppid': 23841, 'port': 40020, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:18,753 INFO (MainThread-23942) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-2017-02-22 17:34:18,753 INFO (MainThread-23942) Starting TensorFlow worker:2 on cluster node 3 on background thread
-2017-02-22 17:34:20,585 INFO (Thread-1-23942) 3: ======== worker:2 ========
-2017-02-22 17:34:20,586 INFO (MainThread-23942) node: {'addr': ('cn1', 47320), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('ffa9ed4b-bcb6-4c8d-8ece-c03d430e7d97'), 'worker_num': 0, 'host': 'cn1', 'ppid': 23841, 'port': 35375, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:20,586 INFO (Thread-1-23942) 3: Cluster spec: {'ps': ['cn1:35375'], 'worker': ['cn1:57336', 'cn1:54422', 'cn1:40020']}
-2017-02-22 17:34:20,586 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-WEWXmy/listener-I7AUzv', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('966dce8c-31c0-4b2a-8bb4-1e2b52891913'), 'worker_num': 1, 'host': 'cn1', 'ppid': 23841, 'port': 57336, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:20,586 INFO (Thread-1-23942) 3: Using CPU
-2017-02-22 17:34:20,587 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-OBhy9y/listener-3PaweO', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('deb31056-3056-4782-9b7a-e2e9c681c4b3'), 'worker_num': 2, 'host': 'cn1', 'ppid': 23841, 'port': 54422, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:20,587 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-31XYNI/listener-uKkpZA', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('d0d931d9-fc02-4712-a97b-10dd1bcb01e2'), 'worker_num': 3, 'host': 'cn1', 'ppid': 23841, 'port': 40020, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:20.588029: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-02-22 17:34:20.588058: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-02-22 17:34:20.588067: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-D0222 17:34:20.588580447   23967 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
-2017-02-22 17:34:20.611700: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> cn1:35375}
-2017-02-22 17:34:20.611758: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> cn1:57336, 1 -> cn1:54422, 2 -> localhost:40020}
-2017-02-22 17:34:20.612463: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:40020
-tensorflow model path: hdfs://big:8020/user/zuxfoucault/mnist_model
-2017-02-22 17:34:20,928 INFO (MainThread-23942) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-2017-02-22 17:34:20,928 INFO (MainThread-23942) Starting TensorFlow worker:2 on cluster node 3 on background thread
-2017-02-22 17:34:20,960 INFO (Thread-3-23942) 3: ======== worker:2 ========
-2017-02-22 17:34:20,960 INFO (Thread-3-23942) 3: Cluster spec: {'ps': ['cn1:35375'], 'worker': ['cn1:57336', 'cn1:54422', 'cn1:40020']}
-2017-02-22 17:34:20,960 INFO (Thread-3-23942) 3: Using CPU
-E0222 17:34:20.961746168   24004 server_chttp2.c:159]        {"created":"@1487756060.961685941","description":"No address added out of total 1 resolved","file":"external/grpc/src/core/ext/transport/chttp2/server/insecure/server_chttp2.c","file_line":125,"referenced_errors":[{"created":"@1487756060.961674772","description":"Failed to add port to server","file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":634,"referenced_errors":[{"created":"@1487756060.961667117","description":"Unable to configure socket","fd":3,"file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":355,"referenced_errors":[{"created":"@1487756060.961652214","description":"OS Error","errno":98,"file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":331,"os_error":"Address already in use","syscall":"bind"}]}],"target_address":"ipv6:[::]:40020"}]}
-Exception in thread Thread-3:
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/threading.py", line 801, in __bootstrap_inner
-    self.run()
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/threading.py", line 754, in run
-    self.__target(*self.__args, **self.__kwargs)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/__pyfiles__/mnist_dist.py", line 39, in map_fun
-    cluster, server = TFNode.start_cluster_server(ctx, 1, args.rdma)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFNode.py", line 85, in start_cluster_server
-    server = tf.train.Server(cluster, ctx.job_name, ctx.task_index)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/site-packages/tensorflow/python/training/server_lib.py", line 144, in __init__
-    self._server_def.SerializeToString(), status)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/contextlib.py", line 24, in __exit__
-    self.gen.next()
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/site-packages/tensorflow/python/framework/errors_impl.py", line 466, in raise_exception_on_not_ok_status
-    pywrap_tensorflow.TF_GetCode(status))
-UnknownError: Could not start gRPC server
 
-2017-02-22 17:34:21,021 INFO (MainThread-23942) node: {'addr': ('cn1', 47320), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('ffa9ed4b-bcb6-4c8d-8ece-c03d430e7d97'), 'worker_num': 0, 'host': 'cn1', 'ppid': 23841, 'port': 35375, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:21,022 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-WEWXmy/listener-I7AUzv', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('966dce8c-31c0-4b2a-8bb4-1e2b52891913'), 'worker_num': 1, 'host': 'cn1', 'ppid': 23841, 'port': 57336, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:21,022 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-OBhy9y/listener-3PaweO', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('deb31056-3056-4782-9b7a-e2e9c681c4b3'), 'worker_num': 2, 'host': 'cn1', 'ppid': 23841, 'port': 54422, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:21,023 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-31XYNI/listener-uKkpZA', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('d0d931d9-fc02-4712-a97b-10dd1bcb01e2'), 'worker_num': 3, 'host': 'cn1', 'ppid': 23841, 'port': 40020, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:21,313 INFO (MainThread-23942) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-2017-02-22 17:34:21,313 INFO (MainThread-23942) Starting TensorFlow worker:2 on cluster node 3 on background thread
-2017-02-22 17:34:21,313 INFO (Thread-4-23942) 3: ======== worker:2 ========
-2017-02-22 17:34:21,314 INFO (Thread-4-23942) 3: Cluster spec: {'ps': ['cn1:35375'], 'worker': ['cn1:57336', 'cn1:54422', 'cn1:40020']}
-2017-02-22 17:34:21,314 INFO (Thread-4-23942) 3: Using CPU
-E0222 17:34:21.348606799   24017 server_chttp2.c:159]        {"created":"@1487756061.348544401","description":"No address added out of total 1 resolved","file":"external/grpc/src/core/ext/transport/chttp2/server/insecure/server_chttp2.c","file_line":125,"referenced_errors":[{"created":"@1487756061.348541104","description":"Failed to add port to server","file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":634,"referenced_errors":[{"created":"@1487756061.348530050","description":"Unable to configure socket","fd":19,"file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":355,"referenced_errors":[{"created":"@1487756061.348515166","description":"OS Error","errno":98,"file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":331,"os_error":"Address already in use","syscall":"bind"}]}],"target_address":"ipv6:[::]:40020"}]}
-2017-02-22 17:34:21,349 INFO (MainThread-23942) node: {'addr': ('cn1', 47320), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('ffa9ed4b-bcb6-4c8d-8ece-c03d430e7d97'), 'worker_num': 0, 'host': 'cn1', 'ppid': 23841, 'port': 35375, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:21,349 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-WEWXmy/listener-I7AUzv', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('966dce8c-31c0-4b2a-8bb4-1e2b52891913'), 'worker_num': 1, 'host': 'cn1', 'ppid': 23841, 'port': 57336, 'tb_pid': 0, 'tb_port': 0}
-Exception in thread Thread-4:
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/threading.py", line 801, in __bootstrap_inner
-    self.run()
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/threading.py", line 754, in run
-    self.__target(*self.__args, **self.__kwargs)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/__pyfiles__/mnist_dist.py", line 39, in map_fun
-    cluster, server = TFNode.start_cluster_server(ctx, 1, args.rdma)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFNode.py", line 85, in start_cluster_server
-    server = tf.train.Server(cluster, ctx.job_name, ctx.task_index)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/site-packages/tensorflow/python/training/server_lib.py", line 144, in __init__
-    self._server_def.SerializeToString(), status)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/contextlib.py", line 24, in __exit__
-    self.gen.next()
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/site-packages/tensorflow/python/framework/errors_impl.py", line 466, in raise_exception_on_not_ok_status
-    pywrap_tensorflow.TF_GetCode(status))
-UnknownError: Could not start gRPC server
-2017-02-22 17:34:21,349 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-OBhy9y/listener-3PaweO', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('deb31056-3056-4782-9b7a-e2e9c681c4b3'), 'worker_num': 2, 'host': 'cn1', 'ppid': 23841, 'port': 54422, 'tb_pid': 0, 'tb_port': 0}
-
-2017-02-22 17:34:21,350 INFO (MainThread-23942) node: {'addr': '/tmp/pymp-31XYNI/listener-uKkpZA', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('d0d931d9-fc02-4712-a97b-10dd1bcb01e2'), 'worker_num': 3, 'host': 'cn1', 'ppid': 23841, 'port': 40020, 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:21,611 INFO (MainThread-23942) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-2017-02-22 17:34:21,611 INFO (MainThread-23942) Starting TensorFlow worker:2 on cluster node 3 on background thread
-2017-02-22 17:34:21,612 INFO (Thread-5-23942) 3: ======== worker:2 ========
-2017-02-22 17:34:21,612 INFO (Thread-5-23942) 3: Cluster spec: {'ps': ['cn1:35375'], 'worker': ['cn1:57336', 'cn1:54422', 'cn1:40020']}
-2017-02-22 17:34:21,612 INFO (Thread-5-23942) 3: Using CPU
-E0222 17:34:21.613667299   24026 server_chttp2.c:159]        {"created":"@1487756061.613607470","description":"No address added out of total 1 resolved","file":"external/grpc/src/core/ext/transport/chttp2/server/insecure/server_chttp2.c","file_line":125,"referenced_errors":[{"created":"@1487756061.613603727","description":"Failed to add port to server","file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":634,"referenced_errors":[{"created":"@1487756061.613595219","description":"Unable to configure socket","fd":3,"file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":355,"referenced_errors":[{"created":"@1487756061.613584052","description":"OS Error","errno":98,"file":"external/grpc/src/core/lib/iomgr/tcp_server_posix.c","file_line":331,"os_error":"Address already in use","syscall":"bind"}]}],"target_address":"ipv6:[::]:40020"}]}
-Exception in thread Thread-5:
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/threading.py", line 801, in __bootstrap_inner
-    self.run()
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/threading.py", line 754, in run
-    self.__target(*self.__args, **self.__kwargs)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/__pyfiles__/mnist_dist.py", line 39, in map_fun
-    cluster, server = TFNode.start_cluster_server(ctx, 1, args.rdma)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFNode.py", line 85, in start_cluster_server
-    server = tf.train.Server(cluster, ctx.job_name, ctx.task_index)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/site-packages/tensorflow/python/training/server_lib.py", line 144, in __init__
-    self._server_def.SerializeToString(), status)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/contextlib.py", line 24, in __exit__
-    self.gen.next()
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/site-packages/tensorflow/python/framework/errors_impl.py", line 466, in raise_exception_on_not_ok_status
-    pywrap_tensorflow.TF_GetCode(status))
-UnknownError: Could not start gRPC server
-
-2017-02-22 17:34:25,509 INFO (MainThread-24038) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-17/02/22 17:34:25 ERROR Executor: Exception in task 1.0 in stage 2.0 (TID 11)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+[Stage 0:========>                                                 (3 + 2) / 20][Stage 0:========>                                                 (3 + 1) / 20]17/02/24 23:51:35 WARN TaskSetManager: Lost task 1.3 in stage 0.0 (TID 7, big, executor 2): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
   File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
     process()
   File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
     serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
   File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
     return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
 
 	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
 	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
@@ -230,502 +99,76 @@ KeyError: 'input'
 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
 	at org.apache.spark.scheduler.Task.run(Task.scala:99)
 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:26,124 INFO (MainThread-24056) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-17/02/22 17:34:26 ERROR Executor: Exception in task 4.0 in stage 2.0 (TID 12)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
 
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+17/02/24 23:51:35 ERROR TaskSetManager: Task 1 in stage 0.0 failed 4 times; aborting job
+17/02/24 23:51:35 ERROR ApplicationMaster: User application exited with status 1
+17/02/24 23:51:35 ERROR TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:154)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:134)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:570)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:180)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:109)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:119)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:51)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:85)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
 	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:26,764 INFO (MainThread-24075) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-17/02/22 17:34:26 ERROR Executor: Exception in task 1.1 in stage 2.0 (TID 13)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:27,387 INFO (MainThread-24092) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-17/02/22 17:34:27 ERROR Executor: Exception in task 4.1 in stage 2.0 (TID 14)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:28,029 INFO (MainThread-24111) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-17/02/22 17:34:28 ERROR Executor: Exception in task 1.2 in stage 2.0 (TID 15)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:28,654 INFO (MainThread-24128) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-17/02/22 17:34:28 ERROR Executor: Exception in task 4.2 in stage 2.0 (TID 16)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-2017-02-22 17:34:29,283 INFO (MainThread-24147) Connected to TFSparkNode.mgr on cn1, ppid=23841, state='running'
-17/02/22 17:34:29 ERROR Executor: Exception in task 1.3 in stage 2.0 (TID 17)
-org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-17/02/22 17:34:29 WARN PythonRunner: Incomplete task interrupted: Attempting to kill Python Worker
 
 LogType:stdout
-Log Upload Time:Wed Feb 22 17:34:31 +0800 2017
-LogLength:0
+Log Upload Time:Fri Feb 24 23:51:37 +0800 2017
+LogLength:7244
 Log Contents:
-
-
-
-Container: container_1487755820093_0001_01_000001 on cn1_44479
-================================================================
-LogType:stderr
-Log Upload Time:Wed Feb 22 17:34:31 +0800 2017
-LogLength:10292
-Log Contents:
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/10/__spark_libs__8665819482321133873.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-17/02/22 17:33:03 WARN SparkContext: Support for Java 7 is deprecated as of Spark 2.0.0
-[Stage 0:>                                                          (0 + 1) / 4][Stage 0:==============>                                            (1 + 1) / 4]17/02/22 17:33:47 WARN TaskSetManager: Lost task 1.0 in stage 0.0 (TID 1, cn1, executor 3): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 88, in _reserve
-Exception: TFManager already started on cn1, ppid=23841, state='running'
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-
-17/02/22 17:33:58 WARN TaskSetManager: Lost task 1.1 in stage 0.0 (TID 3, cn1, executor 3): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 88, in _reserve
-Exception: TFManager already started on cn1, ppid=23841, state='running'
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-
-[Stage 0:=============================>                             (2 + 1) / 4]17/02/22 17:34:08 WARN TaskSetManager: Lost task 1.2 in stage 0.0 (TID 5, cn1, executor 3): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 88, in _reserve
-Exception: TFManager already started on cn1, ppid=23841, state='running'
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-
-[Stage 0:============================================>              (3 + 1) / 4]                                                                                [Stage 1:==============>                                            (1 + 1) / 4][Stage 1:=============================>                             (2 + 1) / 4][Stage 1:============================================>              (3 + 1) / 4]                                                                                [Stage 2:>                                                         (0 + 1) / 10]17/02/22 17:34:25 WARN TaskSetManager: Lost task 1.0 in stage 2.0 (TID 11, cn1, executor 3): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
-  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
-    process()
-  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
-    serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
-    return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
-
-	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
-	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
-	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-
-17/02/22 17:34:29 ERROR TaskSetManager: Task 1 in stage 2.0 failed 4 times; aborting job
-17/02/22 17:34:29 WARN TaskSetManager: Lost task 4.3 in stage 2.0 (TID 18, cn1, executor 3): TaskKilled (killed intentionally)
-17/02/22 17:34:29 ERROR ApplicationMaster: User application exited with status 1
-
-LogType:stdout
-Log Upload Time:Wed Feb 22 17:34:31 +0800 2017
-LogLength:12959
-Log Contents:
-args: Namespace(cluster_size=4, epochs=1, format='csv', images='mnist/csv/train/images', labels='mnist/csv/train/labels', mode='train', model='mnist_model', output='predictions', rdma=False, readers=1, steps=1000, tensorboard=False)
-2017-02-22T17:33:34.767753 ===== Start
+args: Namespace(cluster_size=20, epochs=1, format='csv', images='mnist/csv/train/images', labels='mnist/csv/train/labels', mode='train', model='mnist_model', output='predictions', rdma=False, readers=1, steps=1000, tensorboard=False)
+2017-02-24T23:50:51.849299 ===== Start
 zipping images and labels
-2017-02-22 17:33:35,816 INFO (MainThread-23674) Reserving TFSparkNodes 
-{'addr': ('cn1', 47320), 'task_index': 0, 'port': 35375, 'authkey': UUID('ffa9ed4b-bcb6-4c8d-8ece-c03d430e7d97'), 'worker_num': 0, 'host': 'cn1', 'ppid': 23841, 'job_name': 'ps', 'tb_pid': 0, 'tb_port': 0}
-{'addr': '/tmp/pymp-WEWXmy/listener-I7AUzv', 'task_index': 0, 'port': 57336, 'authkey': UUID('966dce8c-31c0-4b2a-8bb4-1e2b52891913'), 'worker_num': 1, 'host': 'cn1', 'ppid': 23841, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
-{'addr': '/tmp/pymp-OBhy9y/listener-3PaweO', 'task_index': 1, 'port': 54422, 'authkey': UUID('deb31056-3056-4782-9b7a-e2e9c681c4b3'), 'worker_num': 2, 'host': 'cn1', 'ppid': 23841, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
-{'addr': '/tmp/pymp-31XYNI/listener-uKkpZA', 'task_index': 2, 'port': 40020, 'authkey': UUID('d0d931d9-fc02-4712-a97b-10dd1bcb01e2'), 'worker_num': 3, 'host': 'cn1', 'ppid': 23841, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
-2017-02-22 17:34:18,372 INFO (MainThread-23674) Starting TensorFlow
-2017-02-22 17:34:23,387 INFO (MainThread-23674) Feeding training data
+2017-02-24 23:50:52,544 INFO (MainThread-27406) Reserving TFSparkNodes 
 Traceback (most recent call last):
-  File "mnist_spark.py", line 73, in <module>
-    cluster.train(dataRDD, args.epochs)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFCluster.py", line 71, in train
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 798, in foreachPartition
-    self.mapPartitions(func).count()  # Force evaluation
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 1040, in count
-    return self.mapPartitions(lambda i: [sum(1 for _ in i)]).sum()
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 1031, in sum
-    return self.mapPartitions(lambda x: [sum(x)]).fold(0, operator.add)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 905, in fold
-    vals = self.mapPartitions(func).collect()
+  File "mnist_spark.py", line 70, in <module>
+    cluster = TFCluster.reserve(sc, args.cluster_size, num_ps, args.tensorboard, TFCluster.InputMode.SPARK)
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFCluster.py", line 182, in reserve
   File "/usr/lib/spark/python/pyspark/rdd.py", line 808, in collect
     port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
   File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1133, in __call__
   File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/protocol.py", line 319, in get_return_value
 py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
-: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 2.0 failed 4 times, most recent failure: Lost task 1.3 in stage 2.0 (TID 17, cn1, executor 3): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 0.0 failed 4 times, most recent failure: Lost task 1.3 in stage 0.0 (TID 7, big, executor 2): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
   File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
     process()
   File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
     serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
   File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
     return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
 
 	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
 	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
@@ -736,8 +179,8 @@ KeyError: 'input'
 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
 	at org.apache.spark.scheduler.Task.run(Task.scala:99)
 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 
 Driver stacktrace:
@@ -768,9 +211,9 @@ Driver stacktrace:
 	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
 	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
 	at py4j.Gateway.invoke(Gateway.java:280)
@@ -783,34 +226,10 @@ Caused by: org.apache.spark.api.python.PythonException: Traceback (most recent c
     process()
   File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
     serializer.dump_stream(func(split_index, iterator), outfile)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 2406, in pipeline_func
-    return func(split, prev_func(split, iterator))
   File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
     return f(iterator)
-  File "/usr/lib/spark/python/pyspark/rdd.py", line 793, in func
-    r = f(it)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 223, in _train
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 667, in temp
-    token, exp = self._create(typeid, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 567, in _create
-    id, exposed = dispatch(conn, None, 'create', (typeid,)+args, kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 105, in dispatch
-    raise convert_to_error(kind, result)
-RemoteError: 
----------------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 207, in handle_request
-    result = func(c, *args, **kwds)
-  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487755820093_0001/container_1487755820093_0001_01_000004/Python/lib/python2.7/multiprocessing/managers.py", line 386, in create
-    obj = callable(*args, **kwds)
-  File "./tfspark.zip/com/yahoo/ml/tf/TFManager.py", line 29, in <lambda>
-    TFManager.register('get_queue', callable=lambda qname: qdict[qname])
-KeyError: 'input'
----------------------------------------------------------------------------
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
 
 	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
 	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
@@ -821,8 +240,123 @@ KeyError: 'input'
 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
 	at org.apache.spark.scheduler.Task.run(Task.scala:99)
 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	... 1 more
 
+
+
+
+Container: container_1487951242053_0001_01_000003 on big_50641
+================================================================
+LogType:stderr
+Log Upload Time:Fri Feb 24 23:51:37 +0800 2017
+LogLength:8082
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/13/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2017-02-24 23:51:04,974 INFO (MainThread-27595) TFSparkNode.reserve: {'authkey': UUID('eed3d77e-9ee6-4c52-bd44-bbd396536037'), 'worker_num': 0, 'host': 'big', 'tb_port': 0, 'addr': ('big', 48073), 'ppid': 27581, 'task_index': 0, 'job_name': 'ps', 'tb_pid': 0, 'port': 51622}
+17/02/24 23:51:05 ERROR Executor: Exception in task 1.0 in stage 0.0 (TID 1)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
+    process()
+  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
+    return f(iterator)
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
+
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-02-24 23:51:15,541 INFO (MainThread-27624) TFSparkNode.reserve: {'authkey': UUID('ee541ce9-55d9-47ce-9d0b-5ca7ed0c6597'), 'worker_num': 2, 'host': 'big', 'tb_port': 0, 'addr': '/tmp/pymp-TCwk1I/listener-0H9Rgr', 'ppid': 27581, 'task_index': 1, 'job_name': 'worker', 'tb_pid': 0, 'port': 40030}
+17/02/24 23:51:15 ERROR Executor: Exception in task 1.1 in stage 0.0 (TID 3)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
+    process()
+  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
+    return f(iterator)
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
+
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-02-24 23:51:25,663 INFO (MainThread-27654) TFSparkNode.reserve: {'authkey': UUID('a15059e8-c2b0-4310-bbe7-d764ea28b3e7'), 'worker_num': 3, 'host': 'big', 'tb_port': 0, 'addr': '/tmp/pymp-RODEJi/listener-z9sNJJ', 'ppid': 27581, 'task_index': 2, 'job_name': 'worker', 'tb_pid': 0, 'port': 39142}
+17/02/24 23:51:25 ERROR Executor: Exception in task 1.2 in stage 0.0 (TID 5)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
+    process()
+  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
+    return f(iterator)
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
+
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2017-02-24 23:51:35,784 INFO (MainThread-27683) TFSparkNode.reserve: {'authkey': UUID('114f8aee-132d-4c17-9fca-77e61221f05c'), 'worker_num': 4, 'host': 'big', 'tb_port': 0, 'addr': '/tmp/pymp-dzPRFE/listener-ryYkTw', 'ppid': 27581, 'task_index': 3, 'job_name': 'worker', 'tb_pid': 0, 'port': 47902}
+17/02/24 23:51:35 ERROR Executor: Exception in task 1.3 in stage 0.0 (TID 7)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/usr/lib/spark/python/pyspark/worker.py", line 174, in main
+    process()
+  File "/usr/lib/spark/python/pyspark/worker.py", line 169, in process
+    serializer.dump_stream(func(split_index, iterator), outfile)
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 345, in func
+    return f(iterator)
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1487951242053_0001/container_1487951242053_0001_01_000001/tfspark.zip/com/yahoo/ml/tf/TFSparkNode.py", line 89, in _reserve
+Exception: TFManager already started on big, ppid=27581, state='running'
+
+	at org.apache.spark.api.python.PythonRunner$$anon$1.read(PythonRDD.scala:193)
+	at org.apache.spark.api.python.PythonRunner$$anon$1.<init>(PythonRDD.scala:234)
+	at org.apache.spark.api.python.PythonRunner.compute(PythonRDD.scala:152)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+LogType:stdout
+Log Upload Time:Fri Feb 24 23:51:37 +0800 2017
+LogLength:0
+Log Contents:
 
