@@ -1,76 +1,151 @@
 
 
-Container: container_1488097649116_0009_01_000002 on big_42430
+Container: container_1488097649116_0011_01_000005 on big_42430
 ================================================================
 LogType:stderr
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
-LogLength:4068
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
+LogLength:10080
 Log Contents:
 Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/39/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/52/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-17/03/02 23:16:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2017-03-02 23:16:40,403 INFO (MainThread-12030) TFSparkNode.reserve: {'authkey': UUID('c382119f-3101-484b-a6ba-37df4d2c11aa'), 'worker_num': 0, 'host': 'big', 'tb_port': 0, 'addr': ('big', 52696), 'ppid': 11998, 'task_index': 0, 'job_name': 'ps', 'tb_pid': 0, 'port': 39436}
-2017-03-02 23:16:40,646 INFO (MainThread-12030) node: {'addr': ('big', 52696), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('c382119f-3101-484b-a6ba-37df4d2c11aa'), 'worker_num': 0, 'host': 'big', 'ppid': 11998, 'port': 39436, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,646 INFO (MainThread-12030) node: {'addr': '/tmp/pymp-UvSsOi/listener-0LBppA', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('03f3eef4-a71e-494a-8991-6794aaee6529'), 'worker_num': 1, 'host': 'cn3', 'ppid': 15914, 'port': 47960, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,647 INFO (MainThread-12030) node: {'addr': '/tmp/pymp-WwLHeH/listener-bn2KqP', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('efe42921-1f14-40e4-b054-a102a3ccd513'), 'worker_num': 2, 'host': 'cn1', 'ppid': 11097, 'port': 55827, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,647 INFO (MainThread-12030) node: {'addr': '/tmp/pymp-G3rCN8/listener-hbvimr', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('5ef1ffa9-177d-403b-80f0-3ceb0cdd2231'), 'worker_num': 3, 'host': 'cn2', 'ppid': 31565, 'port': 32937, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,899 INFO (MainThread-12030) Connected to TFSparkNode.mgr on big, ppid=11998, state='running'
-2017-03-02 23:16:41,140 INFO (MainThread-12030) Starting TensorFlow ps:0 on cluster node 0 on background thread
-2017-03-02 23:16:47,888 INFO (Thread-1-12030) 0: ======== ps:0 ========
-2017-03-02 23:16:47,889 INFO (Thread-1-12030) 0: Cluster spec: {'ps': ['big:39436'], 'worker': ['cn3:47960', 'cn1:55827', 'cn2:32937']}
-2017-03-02 23:16:47,889 INFO (Thread-1-12030) 0: Using CPU
-2017-03-02 23:16:47.890418: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:47.890467: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:47.890486: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-D0302 23:16:47.891760090   12089 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
-2017-03-02 23:16:47.907025: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> localhost:39436}
-2017-03-02 23:16:47.907077: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> cn3:47960, 1 -> cn1:55827, 2 -> cn2:32937}
-2017-03-02 23:16:47.907887: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:39436
-2017-03-02 23:17:29,930 INFO (MainThread-12030) Got msg: None
-2017-03-02 23:17:29,930 INFO (MainThread-12030) Terminating PS
+17/03/03 11:31:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-03 11:31:40,214 INFO (MainThread-2584) TFSparkNode.reserve: {'authkey': UUID('07b7395d-d51a-4a50-85f1-65ae690e6b3e'), 'worker_num': 3, 'host': 'big', 'tb_port': 0, 'addr': '/tmp/pymp-5DwGT6/listener-9usFlV', 'ppid': 2568, 'task_index': 2, 'job_name': 'worker', 'tb_pid': 0, 'port': 36944}
+2017-03-03 11:31:40,714 INFO (MainThread-2584) node: {'addr': ('cn2', 60485), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('db615601-81e2-4c32-a4e4-fdd80376ddff'), 'worker_num': 0, 'host': 'cn2', 'ppid': 13465, 'port': 49244, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,714 INFO (MainThread-2584) node: {'addr': '/tmp/pymp-ddID2v/listener-DDwJnW', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('6e2e93ca-dd36-4a1c-9337-09d490645f62'), 'worker_num': 1, 'host': 'cn1', 'ppid': 26651, 'port': 45661, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,715 INFO (MainThread-2584) node: {'addr': '/tmp/pymp-Dx5yZJ/listener-b8YSxL', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('5107b910-ef7b-4441-be46-0fa23a436a38'), 'worker_num': 2, 'host': 'cn3', 'ppid': 31541, 'port': 52341, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,715 INFO (MainThread-2584) node: {'addr': '/tmp/pymp-5DwGT6/listener-9usFlV', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('07b7395d-d51a-4a50-85f1-65ae690e6b3e'), 'worker_num': 3, 'host': 'big', 'ppid': 2568, 'port': 36944, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,725 INFO (MainThread-2584) Connected to TFSparkNode.mgr on big, ppid=2568, state='running'
+2017-03-03 11:31:40,964 INFO (MainThread-2584) Starting TensorFlow worker:2 on cluster node 3 on background thread
+2017-03-03 11:31:42,673 INFO (Thread-1-2584) 3: ======== worker:2 ========
+2017-03-03 11:31:42,673 INFO (Thread-1-2584) 3: Cluster spec: {'ps': ['cn2:49244'], 'worker': ['cn1:45661', 'cn3:52341', 'big:36944']}
+2017-03-03 11:31:42,673 INFO (Thread-1-2584) 3: Using CPU
+2017-03-03 11:31:42.674217: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:42.674241: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:42.674262: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+D0303 11:31:42.674859859    2642 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
+2017-03-03 11:31:42.685615: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> cn2:49244}
+2017-03-03 11:31:42.685662: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> cn1:45661, 1 -> cn3:52341, 2 -> localhost:36944}
+2017-03-03 11:31:42.686392: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:36944
+tensorflow model path: hdfs:///user/zuxfoucault/mnist_model
+17/03/03 11:31:46 ERROR GPLNativeCodeLoader: Could not load native gpl library
+java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1867)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at com.hadoop.compression.lzo.GPLNativeCodeLoader.<clinit>(GPLNativeCodeLoader.java:32)
+	at com.hadoop.compression.lzo.LzoCodec.<clinit>(LzoCodec.java:71)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.apache.hadoop.conf.Configuration.getClassByNameOrNull(Configuration.java:2013)
+	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:1978)
+	at org.apache.hadoop.io.compress.CompressionCodecFactory.getCodecClasses(CompressionCodecFactory.java:128)
+	at org.apache.hadoop.io.compress.CompressionCodecFactory.<init>(CompressionCodecFactory.java:175)
+	at org.apache.hadoop.mapred.TextInputFormat.configure(TextInputFormat.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:106)
+	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:75)
+	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)
+	at org.apache.spark.rdd.HadoopRDD.getInputFormat(HadoopRDD.scala:188)
+	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:245)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:211)
+	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:102)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.rdd.ZippedPartitionsRDD2.compute(ZippedPartitionsRDD.scala:89)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:105)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+17/03/03 11:31:46 ERROR LzoCodec: Cannot load native-lzo without native-hadoop
+2017-03-03 11:31:46,971 INFO (MainThread-2695) Connected to TFSparkNode.mgr on big, ppid=2568, state='running'
+2017-03-03 11:31:46,979 INFO (MainThread-2695) mgr.state='running'
+2017-03-03 11:31:46,979 INFO (MainThread-2695) Feeding partition <itertools.chain object at 0x2af288ece310> into input queue <multiprocessing.queues.JoinableQueue object at 0x2af28915c310>
+2017-03-03 11:31:50.407779: I tensorflow/core/distributed_runtime/master_session.cc:1012] Start master session 9fba380abac7e8c7 with config: 
+
+2017-03-03T11:31:50.433835 session ready
+2017-03-03T11:31:51.193300 step: 0 accuracy: 0.600000023842
+2017-03-03 11:31:55,435 INFO (MainThread-2695) Processed 6144 items in partition
+2017-03-03 11:31:55,716 INFO (MainThread-2695) Connected to TFSparkNode.mgr on big, ppid=2568, state='running'
+2017-03-03 11:31:55,723 INFO (MainThread-2695) mgr.state='running'
+2017-03-03 11:31:55,724 INFO (MainThread-2695) Feeding partition <itertools.chain object at 0x2af288ed84d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2af28915c310>
+2017-03-03 11:32:04,446 INFO (MainThread-2695) Processed 6144 items in partition
+2017-03-03 11:32:04,709 INFO (MainThread-2695) Connected to TFSparkNode.mgr on big, ppid=2568, state='running'
+2017-03-03 11:32:04,714 INFO (MainThread-2695) mgr.state='running'
+2017-03-03 11:32:04,714 INFO (MainThread-2695) Feeding partition <itertools.chain object at 0x2af288ed82d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2af28915c310>
+2017-03-03T11:32:12.924854 step: 300 accuracy: 0.939999997616
+2017-03-03 11:32:13,521 INFO (MainThread-2695) Processed 6144 items in partition
+2017-03-03 11:32:13,785 INFO (MainThread-2695) Connected to TFSparkNode.mgr on big, ppid=2568, state='running'
+2017-03-03 11:32:13,790 INFO (MainThread-2695) mgr.state='running'
+2017-03-03 11:32:13,790 INFO (MainThread-2695) Feeding partition <itertools.chain object at 0x2af288ed82d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2af28915c310>
+2017-03-03T11:32:20.316614 step: 400 accuracy: 0.879999995232
+2017-03-03 11:32:22,462 INFO (MainThread-2695) Processed 6144 items in partition
+2017-03-03 11:32:22,725 INFO (MainThread-2695) Connected to TFSparkNode.mgr on big, ppid=2568, state='running'
+2017-03-03 11:32:22,732 INFO (MainThread-2695) mgr.state='running'
+2017-03-03 11:32:22,732 INFO (MainThread-2695) Feeding partition <itertools.chain object at 0x2af288ed82d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2af28915c310>
+2017-03-03T11:32:27.554823 step: 500 accuracy: 0.949999988079
+2017-03-03 11:32:30,881 INFO (MainThread-2695) Processed 5728 items in partition
 
 LogType:stdout
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
 LogLength:0
 Log Contents:
 
 
 
-Container: container_1488097649116_0009_01_000005 on cn1_60930
+Container: container_1488097649116_0011_01_000004 on cn1_60930
 ================================================================
 LogType:stderr
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
-LogLength:9672
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
+LogLength:7832
 Log Contents:
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/49/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/61/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-17/03/02 23:16:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2017-03-02 23:16:40,319 INFO (MainThread-11119) TFSparkNode.reserve: {'authkey': UUID('efe42921-1f14-40e4-b054-a102a3ccd513'), 'worker_num': 2, 'host': 'cn1', 'tb_port': 0, 'addr': '/tmp/pymp-WwLHeH/listener-bn2KqP', 'ppid': 11097, 'task_index': 1, 'job_name': 'worker', 'tb_pid': 0, 'port': 55827}
-2017-03-02 23:16:40,692 INFO (MainThread-11119) node: {'addr': ('big', 52696), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('c382119f-3101-484b-a6ba-37df4d2c11aa'), 'worker_num': 0, 'host': 'big', 'ppid': 11998, 'port': 39436, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,692 INFO (MainThread-11119) node: {'addr': '/tmp/pymp-UvSsOi/listener-0LBppA', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('03f3eef4-a71e-494a-8991-6794aaee6529'), 'worker_num': 1, 'host': 'cn3', 'ppid': 15914, 'port': 47960, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,692 INFO (MainThread-11119) node: {'addr': '/tmp/pymp-WwLHeH/listener-bn2KqP', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('efe42921-1f14-40e4-b054-a102a3ccd513'), 'worker_num': 2, 'host': 'cn1', 'ppid': 11097, 'port': 55827, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,692 INFO (MainThread-11119) node: {'addr': '/tmp/pymp-G3rCN8/listener-hbvimr', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('5ef1ffa9-177d-403b-80f0-3ceb0cdd2231'), 'worker_num': 3, 'host': 'cn2', 'ppid': 31565, 'port': 32937, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,745 INFO (MainThread-11119) Connected to TFSparkNode.mgr on cn1, ppid=11097, state='running'
-2017-03-02 23:16:40,960 INFO (MainThread-11119) Starting TensorFlow worker:1 on cluster node 2 on background thread
-2017-03-02 23:16:42,777 INFO (Thread-1-11119) 2: ======== worker:1 ========
-2017-03-02 23:16:42,777 INFO (Thread-1-11119) 2: Cluster spec: {'ps': ['big:39436'], 'worker': ['cn3:47960', 'cn1:55827', 'cn2:32937']}
-2017-03-02 23:16:42,778 INFO (Thread-1-11119) 2: Using CPU
-2017-03-02 23:16:42.778946: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:42.779011: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:42.779053: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-D0302 23:16:42.779538195   11176 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
-2017-03-02 23:16:42.793294: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> big:39436}
-2017-03-02 23:16:42.793454: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> cn3:47960, 1 -> localhost:55827, 2 -> cn2:32937}
-2017-03-02 23:16:42.794252: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:55827
-tensorflow model path: hdfs://default/user/zuxfoucault/mnist_model
-17/03/02 23:16:46 ERROR GPLNativeCodeLoader: Could not load native gpl library
+17/03/03 11:31:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-03 11:31:40,467 INFO (MainThread-26669) TFSparkNode.reserve: {'authkey': UUID('6e2e93ca-dd36-4a1c-9337-09d490645f62'), 'worker_num': 1, 'host': 'cn1', 'tb_port': 0, 'addr': '/tmp/pymp-ddID2v/listener-DDwJnW', 'ppid': 26651, 'task_index': 0, 'job_name': 'worker', 'tb_pid': 0, 'port': 45661}
+2017-03-03 11:31:40,787 INFO (MainThread-26669) node: {'addr': ('cn2', 60485), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('db615601-81e2-4c32-a4e4-fdd80376ddff'), 'worker_num': 0, 'host': 'cn2', 'ppid': 13465, 'port': 49244, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,787 INFO (MainThread-26669) node: {'addr': '/tmp/pymp-ddID2v/listener-DDwJnW', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('6e2e93ca-dd36-4a1c-9337-09d490645f62'), 'worker_num': 1, 'host': 'cn1', 'ppid': 26651, 'port': 45661, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,787 INFO (MainThread-26669) node: {'addr': '/tmp/pymp-Dx5yZJ/listener-b8YSxL', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('5107b910-ef7b-4441-be46-0fa23a436a38'), 'worker_num': 2, 'host': 'cn3', 'ppid': 31541, 'port': 52341, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,787 INFO (MainThread-26669) node: {'addr': '/tmp/pymp-5DwGT6/listener-9usFlV', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('07b7395d-d51a-4a50-85f1-65ae690e6b3e'), 'worker_num': 3, 'host': 'big', 'ppid': 2568, 'port': 36944, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,796 INFO (MainThread-26669) Connected to TFSparkNode.mgr on cn1, ppid=26651, state='running'
+2017-03-03 11:31:41,002 INFO (MainThread-26669) Starting TensorFlow worker:0 on cluster node 1 on background thread
+2017-03-03 11:31:42,929 INFO (Thread-1-26669) 1: ======== worker:0 ========
+2017-03-03 11:31:42,929 INFO (Thread-1-26669) 1: Cluster spec: {'ps': ['cn2:49244'], 'worker': ['cn1:45661', 'cn3:52341', 'big:36944']}
+2017-03-03 11:31:42,929 INFO (Thread-1-26669) 1: Using CPU
+2017-03-03 11:31:42.930340: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:42.930407: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:42.930424: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+D0303 11:31:42.930973825   26726 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
+2017-03-03 11:31:42.942982: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> cn2:49244}
+2017-03-03 11:31:42.943144: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> localhost:45661, 1 -> cn3:52341, 2 -> big:36944}
+2017-03-03 11:31:42.944018: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:45661
+tensorflow model path: hdfs:///user/zuxfoucault/mnist_model
+17/03/03 11:31:46 ERROR GPLNativeCodeLoader: Could not load native gpl library
 java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path
 	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1886)
 	at java.lang.Runtime.loadLibrary0(Runtime.java:849)
@@ -118,105 +193,273 @@ java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-17/03/02 23:16:46 ERROR LzoCodec: Cannot load native-lzo without native-hadoop
-2017-03-02 23:16:47,289 INFO (MainThread-11217) Connected to TFSparkNode.mgr on cn1, ppid=11097, state='running'
-2017-03-02 23:16:47,303 INFO (MainThread-11217) mgr.state='running'
-2017-03-02 23:16:47,303 INFO (MainThread-11217) Feeding partition <itertools.chain object at 0x2b80b9c44750> into input queue <multiprocessing.queues.JoinableQueue object at 0x2b80b9c4d1d0>
-2017-03-02 23:16:48.552483: I tensorflow/core/distributed_runtime/master_session.cc:1012] Start master session a6406887095ef0de with config: 
+17/03/03 11:31:46 ERROR LzoCodec: Cannot load native-lzo without native-hadoop
+2017-03-03 11:31:47,325 INFO (MainThread-26765) Connected to TFSparkNode.mgr on cn1, ppid=26651, state='running'
+2017-03-03 11:31:47,336 INFO (MainThread-26765) mgr.state='running'
+2017-03-03 11:31:47,336 INFO (MainThread-26765) Feeding partition <itertools.chain object at 0x2afe0e857750> into input queue <multiprocessing.queues.JoinableQueue object at 0x2afe0e8621d0>
+2017-03-03 11:31:48.264782: I tensorflow/core/distributed_runtime/master_session.cc:1012] Start master session 17882769b79ea2cb with config: 
 
-INFO:tensorflow:Waiting for model to be ready.  Ready_for_local_init_op:  None, ready: Variables not initialized: hid_w, hid_b, sm_w, sm_b, Variable, hid_w/Adagrad, hid_b/Adagrad, sm_w/Adagrad, sm_b/Adagrad
-2017-03-02 23:16:48,603 INFO (Thread-1-11119) Waiting for model to be ready.  Ready_for_local_init_op:  None, ready: Variables not initialized: hid_w, hid_b, sm_w, sm_b, Variable, hid_w/Adagrad, hid_b/Adagrad, sm_w/Adagrad, sm_b/Adagrad
-2017-03-02 23:17:18.645866: I tensorflow/core/distributed_runtime/master_session.cc:1012] Start master session 8f4971b622ded4dd with config: 
-
-2017-03-02T23:17:18.667400 session ready
-2017-03-02T23:17:19.150470 step: 400 accuracy: 0.949999988079
-2017-03-02T23:17:21.345767 step: 500 accuracy: 0.959999978542
-2017-03-02 23:17:21,975 INFO (MainThread-11217) Processed 5120 items in partition
-2017-03-02 23:17:22,277 INFO (MainThread-11217) Connected to TFSparkNode.mgr on cn1, ppid=11097, state='running'
-2017-03-02 23:17:22,282 INFO (MainThread-11217) mgr.state='running'
-2017-03-02 23:17:22,283 INFO (MainThread-11217) Feeding partition <itertools.chain object at 0x2b80b9c51910> into input queue <multiprocessing.queues.JoinableQueue object at 0x2b80b9c4d1d0>
-2017-03-02 23:17:29,405 INFO (MainThread-11217) Processed 5728 items in partition
-2017-03-02 23:17:29,648 INFO (MainThread-11119) Connected to TFSparkNode.mgr on cn1, ppid=11097, state='running'
-2017-03-02 23:17:29,648 INFO (MainThread-11119) Stopping all queues
-2017-03-02 23:17:29,650 INFO (MainThread-11119) Feeding None into input queue
-2017-03-02 23:17:29,651 INFO (Thread-1-11119) next_batch() got None
-done feeding
-2017-03-02 23:17:29,659 INFO (MainThread-11119) Feeding None into output queue
-2017-03-02T23:17:29.659553 stopping supervisor
-2017-03-02 23:17:29,660 INFO (MainThread-11119) Setting mgr.state to 'stopped'
 
 LogType:stdout
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
 LogLength:0
 Log Contents:
 
 
 
-Container: container_1488097649116_0009_01_000001 on cn2_52699
+Container: container_1488097649116_0011_01_000003 on cn2_52699
 ================================================================
 LogType:stderr
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
-LogLength:2255
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
+LogLength:3937
 Log Contents:
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/40/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/53/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-17/03/02 23:16:20 WARN SparkContext: Support for Java 7 is deprecated as of Spark 2.0.0
-[Stage 0:>                                                          (0 + 0) / 4][Stage 0:>                                                          (0 + 4) / 4][Stage 0:=============================>                             (2 + 2) / 4][Stage 0:============================================>              (3 + 1) / 4]                                                                                [Stage 1:============================================>              (3 + 1) / 4][Stage 1:==============>    (3 + 1) / 4][Stage 2:>                 (0 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=>                (1 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:===>              (2 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=====>            (3 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=======>          (4 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=========>        (5 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:==========>       (6 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:============>     (7 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:==============>   (8 + 2) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10]                                                                                17/03/02 23:17:35 WARN Dispatcher: Message RemoteProcessDisconnected(192.168.160.1:34971) dropped. RpcEnv already stopped.
-17/03/02 23:17:35 WARN Dispatcher: Message RemoteProcessDisconnected(192.168.160.1:34971) dropped. RpcEnv already stopped.
+17/03/03 11:31:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-03 11:31:40,555 INFO (MainThread-13479) TFSparkNode.reserve: {'authkey': UUID('db615601-81e2-4c32-a4e4-fdd80376ddff'), 'worker_num': 0, 'host': 'cn2', 'tb_port': 0, 'addr': ('cn2', 60485), 'ppid': 13465, 'task_index': 0, 'job_name': 'ps', 'tb_pid': 0, 'port': 49244}
+2017-03-03 11:31:40,779 INFO (MainThread-13479) node: {'addr': ('cn2', 60485), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('db615601-81e2-4c32-a4e4-fdd80376ddff'), 'worker_num': 0, 'host': 'cn2', 'ppid': 13465, 'port': 49244, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,779 INFO (MainThread-13479) node: {'addr': '/tmp/pymp-ddID2v/listener-DDwJnW', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('6e2e93ca-dd36-4a1c-9337-09d490645f62'), 'worker_num': 1, 'host': 'cn1', 'ppid': 26651, 'port': 45661, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,780 INFO (MainThread-13479) node: {'addr': '/tmp/pymp-Dx5yZJ/listener-b8YSxL', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('5107b910-ef7b-4441-be46-0fa23a436a38'), 'worker_num': 2, 'host': 'cn3', 'ppid': 31541, 'port': 52341, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,780 INFO (MainThread-13479) node: {'addr': '/tmp/pymp-5DwGT6/listener-9usFlV', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('07b7395d-d51a-4a50-85f1-65ae690e6b3e'), 'worker_num': 3, 'host': 'big', 'ppid': 2568, 'port': 36944, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:41,031 INFO (MainThread-13479) Connected to TFSparkNode.mgr on cn2, ppid=13465, state='running'
+2017-03-03 11:31:41,241 INFO (MainThread-13479) Starting TensorFlow ps:0 on cluster node 0 on background thread
+2017-03-03 11:31:47,855 INFO (Thread-1-13479) 0: ======== ps:0 ========
+2017-03-03 11:31:47,856 INFO (Thread-1-13479) 0: Cluster spec: {'ps': ['cn2:49244'], 'worker': ['cn1:45661', 'cn3:52341', 'big:36944']}
+2017-03-03 11:31:47,856 INFO (Thread-1-13479) 0: Using CPU
+2017-03-03 11:31:47.857579: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:47.857626: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:47.857644: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+D0303 11:31:47.858611885   13541 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
+2017-03-03 11:31:47.873572: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> localhost:49244}
+2017-03-03 11:31:47.873618: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> cn1:45661, 1 -> cn3:52341, 2 -> big:36944}
+2017-03-03 11:31:47.874409: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:49244
+17/03/03 12:01:12 WARN PythonRunner: Incomplete task interrupted: Attempting to kill Python Worker
 
 LogType:stdout
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
-LogLength:1548
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
+LogLength:0
 Log Contents:
-args: Namespace(cluster_size=4, epochs=1, format='csv', images='mnist/csv/train/images', labels='mnist/csv/train/labels', mode='train', model='hdfs://default/user/zuxfoucault/mnist_model', output='predictions', rdma=False, readers=1, steps=1000, tensorboard=False)
-2017-03-02T23:16:28.218120 ===== Start
+
+
+
+Container: container_1488097649116_0011_01_000001 on cn2_52699
+================================================================
+LogType:stderr
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
+LogLength:8252
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/53/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+17/03/03 11:31:21 WARN SparkContext: Support for Java 7 is deprecated as of Spark 2.0.0
+[Stage 0:>                                                          (0 + 4) / 4][Stage 0:==============>                                            (1 + 3) / 4][Stage 0:============================================>              (3 + 1) / 4]                                                                                [Stage 1:============================================>              (3 + 1) / 4][Stage 1:==============>    (3 + 1) / 4][Stage 2:>                 (0 + 0) / 10][Stage 1:============================================>              (3 + 1) / 4][Stage 1:==============>    (3 + 1) / 4][Stage 2:>                 (0 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=>                (1 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:===>              (2 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=====>            (3 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=======>          (4 + 2) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=======>          (4 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:=========>        (5 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:==========>       (6 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:============>     (7 + 3) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:==============>   (8 + 2) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 1:==============>    (3 + 1) / 4][Stage 2:================> (9 + 1) / 10][Stage 2:====================================================>     (9 + 1) / 10]17/03/03 12:01:12 WARN TaskSetManager: Lost task 2.0 in stage 1.0 (TID 6, cn2, executor 2): TaskKilled (killed intentionally)
+17/03/03 12:01:21 ERROR ApplicationMaster: User application exited with status 1
+17/03/03 12:01:22 ERROR TransportRequestHandler: Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:154)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:134)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:570)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:180)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:109)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:119)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead0(TransportChannelHandler.java:51)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:85)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:745)
+
+LogType:stdout
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
+LogLength:10205
+Log Contents:
+args: Namespace(cluster_size=4, epochs=1, format='csv', images='mnist/csv/train/images', labels='mnist/csv/train/labels', mode='train', model='hdfs:///user/zuxfoucault/mnist_model', output='predictions', rdma=False, readers=1, steps=1000, tensorboard=False)
+2017-03-03T11:31:28.491240 ===== Start
 zipping images and labels
-2017-03-02 23:16:29,116 INFO (MainThread-31392) Reserving TFSparkNodes 
-{'addr': ('big', 52696), 'task_index': 0, 'port': 39436, 'authkey': UUID('c382119f-3101-484b-a6ba-37df4d2c11aa'), 'worker_num': 0, 'host': 'big', 'ppid': 11998, 'job_name': 'ps', 'tb_pid': 0, 'tb_port': 0}
-{'addr': '/tmp/pymp-UvSsOi/listener-0LBppA', 'task_index': 0, 'port': 47960, 'authkey': UUID('03f3eef4-a71e-494a-8991-6794aaee6529'), 'worker_num': 1, 'host': 'cn3', 'ppid': 15914, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
-{'addr': '/tmp/pymp-WwLHeH/listener-bn2KqP', 'task_index': 1, 'port': 55827, 'authkey': UUID('efe42921-1f14-40e4-b054-a102a3ccd513'), 'worker_num': 2, 'host': 'cn1', 'ppid': 11097, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
-{'addr': '/tmp/pymp-G3rCN8/listener-hbvimr', 'task_index': 2, 'port': 32937, 'authkey': UUID('5ef1ffa9-177d-403b-80f0-3ceb0cdd2231'), 'worker_num': 3, 'host': 'cn2', 'ppid': 31565, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,557 INFO (MainThread-31392) Starting TensorFlow
-2017-03-02 23:16:45,563 INFO (MainThread-31392) Feeding training data
-2017-03-02 23:17:29,506 INFO (MainThread-31392) Stopping TensorFlow nodes
-2017-03-02T23:17:35.180829 ===== Stop
+2017-03-03 11:31:29,321 INFO (MainThread-13291) Reserving TFSparkNodes 
+{'addr': ('cn2', 60485), 'task_index': 0, 'port': 49244, 'authkey': UUID('db615601-81e2-4c32-a4e4-fdd80376ddff'), 'worker_num': 0, 'host': 'cn2', 'ppid': 13465, 'job_name': 'ps', 'tb_pid': 0, 'tb_port': 0}
+{'addr': '/tmp/pymp-ddID2v/listener-DDwJnW', 'task_index': 0, 'port': 45661, 'authkey': UUID('6e2e93ca-dd36-4a1c-9337-09d490645f62'), 'worker_num': 1, 'host': 'cn1', 'ppid': 26651, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
+{'addr': '/tmp/pymp-Dx5yZJ/listener-b8YSxL', 'task_index': 1, 'port': 52341, 'authkey': UUID('5107b910-ef7b-4441-be46-0fa23a436a38'), 'worker_num': 2, 'host': 'cn3', 'ppid': 31541, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
+{'addr': '/tmp/pymp-5DwGT6/listener-9usFlV', 'task_index': 2, 'port': 36944, 'authkey': UUID('07b7395d-d51a-4a50-85f1-65ae690e6b3e'), 'worker_num': 3, 'host': 'big', 'ppid': 2568, 'job_name': 'worker', 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,656 INFO (MainThread-13291) Starting TensorFlow
+2017-03-03 11:31:45,662 INFO (MainThread-13291) Feeding training data
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1488097649116_0011/container_1488097649116_0011_01_000001/Python/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1488097649116_0011/container_1488097649116_0011_01_000001/Python/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1488097649116_0011/container_1488097649116_0011_01_000001/tfspark.zip/com/yahoo/ml/tf/TFCluster.py", line 43, in _start
+    background=(self.input_mode == InputMode.SPARK)))
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 798, in foreachPartition
+    self.mapPartitions(func).count()  # Force evaluation
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 1040, in count
+    return self.mapPartitions(lambda i: [sum(1 for _ in i)]).sum()
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 1031, in sum
+    return self.mapPartitions(lambda x: [sum(x)]).fold(0, operator.add)
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 905, in fold
+    vals = self.mapPartitions(func).collect()
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 808, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1133, in __call__
+    answer, self.gateway_client, self.target_id, self.name)
+  File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/protocol.py", line 319, in get_return_value
+    format(target_id, ".", name), value)
+Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job 1 cancelled because Stage 1 was cancelled
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1435)
+	at org.apache.spark.scheduler.DAGScheduler.handleJobCancellation(DAGScheduler.scala:1375)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply$mcVI$sp(DAGScheduler.scala:1364)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply(DAGScheduler.scala:1363)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply(DAGScheduler.scala:1363)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofInt.foreach(ArrayOps.scala:234)
+	at org.apache.spark.scheduler.DAGScheduler.handleStageCancellation(DAGScheduler.scala:1363)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1619)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1605)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1594)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:628)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1918)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1931)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1944)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1958)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:935)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:362)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:934)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:214)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+Traceback (most recent call last):
+  File "mnist_spark.py", line 73, in <module>
+    cluster.train(dataRDD, args.epochs)
+  File "/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/appcache/application_1488097649116_0011/container_1488097649116_0011_01_000001/tfspark.zip/com/yahoo/ml/tf/TFCluster.py", line 71, in train
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 798, in foreachPartition
+    self.mapPartitions(func).count()  # Force evaluation
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 1040, in count
+    return self.mapPartitions(lambda i: [sum(1 for _ in i)]).sum()
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 1031, in sum
+    return self.mapPartitions(lambda x: [sum(x)]).fold(0, operator.add)
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 905, in fold
+    vals = self.mapPartitions(func).collect()
+  File "/usr/lib/spark/python/pyspark/rdd.py", line 808, in collect
+    port = self.ctx._jvm.PythonRDD.collectAndServe(self._jrdd.rdd())
+  File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1133, in __call__
+  File "/usr/lib/spark/python/lib/py4j-0.10.4-src.zip/py4j/protocol.py", line 319, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job 2 cancelled because Stage 2 was cancelled
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1435)
+	at org.apache.spark.scheduler.DAGScheduler.handleJobCancellation(DAGScheduler.scala:1375)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply$mcVI$sp(DAGScheduler.scala:1364)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply(DAGScheduler.scala:1363)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleStageCancellation$1.apply(DAGScheduler.scala:1363)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofInt.foreach(ArrayOps.scala:234)
+	at org.apache.spark.scheduler.DAGScheduler.handleStageCancellation(DAGScheduler.scala:1363)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1619)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1605)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1594)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:628)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1918)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1931)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1944)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1958)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:935)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:362)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:934)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:453)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:280)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:214)
+	at java.lang.Thread.run(Thread.java:745)
 
 
 
-Container: container_1488097649116_0009_01_000003 on cn2_52699
+
+Container: container_1488097649116_0011_01_000002 on cn3_34596
 ================================================================
 LogType:stderr
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
-LogLength:9991
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
+LogLength:9376
 Log Contents:
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/40/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/43/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-17/03/02 23:16:24 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2017-03-02 23:16:40,153 INFO (MainThread-31579) TFSparkNode.reserve: {'authkey': UUID('5ef1ffa9-177d-403b-80f0-3ceb0cdd2231'), 'worker_num': 3, 'host': 'cn2', 'tb_port': 0, 'addr': '/tmp/pymp-G3rCN8/listener-hbvimr', 'ppid': 31565, 'task_index': 2, 'job_name': 'worker', 'tb_pid': 0, 'port': 32937}
-2017-03-02 23:16:40,691 INFO (MainThread-31579) node: {'addr': ('big', 52696), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('c382119f-3101-484b-a6ba-37df4d2c11aa'), 'worker_num': 0, 'host': 'big', 'ppid': 11998, 'port': 39436, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,692 INFO (MainThread-31579) node: {'addr': '/tmp/pymp-UvSsOi/listener-0LBppA', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('03f3eef4-a71e-494a-8991-6794aaee6529'), 'worker_num': 1, 'host': 'cn3', 'ppid': 15914, 'port': 47960, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,692 INFO (MainThread-31579) node: {'addr': '/tmp/pymp-WwLHeH/listener-bn2KqP', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('efe42921-1f14-40e4-b054-a102a3ccd513'), 'worker_num': 2, 'host': 'cn1', 'ppid': 11097, 'port': 55827, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,692 INFO (MainThread-31579) node: {'addr': '/tmp/pymp-G3rCN8/listener-hbvimr', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('5ef1ffa9-177d-403b-80f0-3ceb0cdd2231'), 'worker_num': 3, 'host': 'cn2', 'ppid': 31565, 'port': 32937, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,702 INFO (MainThread-31579) Connected to TFSparkNode.mgr on cn2, ppid=31565, state='running'
-2017-03-02 23:16:40,913 INFO (MainThread-31579) Starting TensorFlow worker:2 on cluster node 3 on background thread
-2017-03-02 23:16:42,559 INFO (Thread-1-31579) 3: ======== worker:2 ========
-2017-03-02 23:16:42,559 INFO (Thread-1-31579) 3: Cluster spec: {'ps': ['big:39436'], 'worker': ['cn3:47960', 'cn1:55827', 'cn2:32937']}
-2017-03-02 23:16:42,559 INFO (Thread-1-31579) 3: Using CPU
-2017-03-02 23:16:42.559870: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:42.559892: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:42.559901: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-D0302 23:16:42.560470655   31642 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
-2017-03-02 23:16:42.570506: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> big:39436}
-2017-03-02 23:16:42.570545: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> cn3:47960, 1 -> cn1:55827, 2 -> localhost:32937}
-2017-03-02 23:16:42.571265: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:32937
-tensorflow model path: hdfs://default/user/zuxfoucault/mnist_model
-17/03/02 23:16:46 ERROR GPLNativeCodeLoader: Could not load native gpl library
+17/03/03 11:31:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-03-03 11:31:40,359 INFO (MainThread-31563) TFSparkNode.reserve: {'authkey': UUID('5107b910-ef7b-4441-be46-0fa23a436a38'), 'worker_num': 2, 'host': 'cn3', 'tb_port': 0, 'addr': '/tmp/pymp-Dx5yZJ/listener-b8YSxL', 'ppid': 31541, 'task_index': 1, 'job_name': 'worker', 'tb_pid': 0, 'port': 52341}
+2017-03-03 11:31:40,801 INFO (MainThread-31563) node: {'addr': ('cn2', 60485), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('db615601-81e2-4c32-a4e4-fdd80376ddff'), 'worker_num': 0, 'host': 'cn2', 'ppid': 13465, 'port': 49244, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,801 INFO (MainThread-31563) node: {'addr': '/tmp/pymp-ddID2v/listener-DDwJnW', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('6e2e93ca-dd36-4a1c-9337-09d490645f62'), 'worker_num': 1, 'host': 'cn1', 'ppid': 26651, 'port': 45661, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,802 INFO (MainThread-31563) node: {'addr': '/tmp/pymp-Dx5yZJ/listener-b8YSxL', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('5107b910-ef7b-4441-be46-0fa23a436a38'), 'worker_num': 2, 'host': 'cn3', 'ppid': 31541, 'port': 52341, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,802 INFO (MainThread-31563) node: {'addr': '/tmp/pymp-5DwGT6/listener-9usFlV', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('07b7395d-d51a-4a50-85f1-65ae690e6b3e'), 'worker_num': 3, 'host': 'big', 'ppid': 2568, 'port': 36944, 'tb_pid': 0, 'tb_port': 0}
+2017-03-03 11:31:40,810 INFO (MainThread-31563) Connected to TFSparkNode.mgr on cn3, ppid=31541, state='running'
+2017-03-03 11:31:41,020 INFO (MainThread-31563) Starting TensorFlow worker:1 on cluster node 2 on background thread
+2017-03-03 11:31:42,645 INFO (Thread-1-31563) 2: ======== worker:1 ========
+2017-03-03 11:31:42,645 INFO (Thread-1-31563) 2: Cluster spec: {'ps': ['cn2:49244'], 'worker': ['cn1:45661', 'cn3:52341', 'big:36944']}
+2017-03-03 11:31:42,645 INFO (Thread-1-31563) 2: Using CPU
+2017-03-03 11:31:42.646283: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:42.646308: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-03-03 11:31:42.646317: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+D0303 11:31:42.646884169   31619 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
+2017-03-03 11:31:42.656929: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> cn2:49244}
+2017-03-03 11:31:42.656973: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> cn1:45661, 1 -> localhost:52341, 2 -> big:36944}
+2017-03-03 11:31:42.657715: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:52341
+tensorflow model path: hdfs:///user/zuxfoucault/mnist_model
+17/03/03 11:31:46 ERROR GPLNativeCodeLoader: Could not load native gpl library
 java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path
 	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1886)
 	at java.lang.Runtime.loadLibrary0(Runtime.java:849)
@@ -264,159 +507,30 @@ java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:745)
-17/03/02 23:16:46 ERROR LzoCodec: Cannot load native-lzo without native-hadoop
-2017-03-02 23:16:47,136 INFO (MainThread-31685) Connected to TFSparkNode.mgr on cn2, ppid=31565, state='running'
-2017-03-02 23:16:47,141 INFO (MainThread-31685) mgr.state='running'
-2017-03-02 23:16:47,142 INFO (MainThread-31685) Feeding partition <itertools.chain object at 0x2b1e3df05750> into input queue <multiprocessing.queues.JoinableQueue object at 0x2b1e3df101d0>
-2017-03-02 23:16:51.148948: I tensorflow/core/distributed_runtime/master_session.cc:1012] Start master session a2097a6180899c70 with config: 
+17/03/03 11:31:46 ERROR LzoCodec: Cannot load native-lzo without native-hadoop
+2017-03-03 11:31:47,173 INFO (MainThread-31658) Connected to TFSparkNode.mgr on cn3, ppid=31541, state='running'
+2017-03-03 11:31:47,178 INFO (MainThread-31658) mgr.state='running'
+2017-03-03 11:31:47,178 INFO (MainThread-31658) Feeding partition <itertools.chain object at 0x2ba152a9e750> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba152aa71d0>
+2017-03-03 11:31:51.703252: I tensorflow/core/distributed_runtime/master_session.cc:1012] Start master session ad438044cfde4f87 with config: 
 
-2017-03-02T23:16:51.175777 session ready
-2017-03-02T23:16:54.467153 step: 100 accuracy: 0.910000026226
-2017-03-02 23:16:55,490 INFO (MainThread-31685) Processed 6144 items in partition
-2017-03-02 23:16:55,777 INFO (MainThread-31685) Connected to TFSparkNode.mgr on cn2, ppid=31565, state='running'
-2017-03-02 23:16:55,785 INFO (MainThread-31685) mgr.state='running'
-2017-03-02 23:16:55,785 INFO (MainThread-31685) Feeding partition <itertools.chain object at 0x2b1e3df13910> into input queue <multiprocessing.queues.JoinableQueue object at 0x2b1e3df101d0>
-2017-03-02 23:17:04,689 INFO (MainThread-31685) Processed 6144 items in partition
-2017-03-02 23:17:04,979 INFO (MainThread-31685) Connected to TFSparkNode.mgr on cn2, ppid=31565, state='running'
-2017-03-02 23:17:04,986 INFO (MainThread-31685) mgr.state='running'
-2017-03-02 23:17:04,986 INFO (MainThread-31685) Feeding partition <itertools.chain object at 0x2b1e3df134d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2b1e3df101d0>
-2017-03-02 23:17:13,795 INFO (MainThread-31685) Processed 6144 items in partition
-2017-03-02 23:17:14,073 INFO (MainThread-31685) Connected to TFSparkNode.mgr on cn2, ppid=31565, state='running'
-2017-03-02 23:17:14,080 INFO (MainThread-31685) mgr.state='running'
-2017-03-02 23:17:14,080 INFO (MainThread-31685) Feeding partition <itertools.chain object at 0x2b1e3df134d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2b1e3df101d0>
-2017-03-02T23:17:19.160493 step: 400 accuracy: 0.949999988079
-2017-03-02 23:17:22,832 INFO (MainThread-31685) Processed 6144 items in partition
-2017-03-02 23:17:29,666 INFO (MainThread-31579) Connected to TFSparkNode.mgr on cn2, ppid=31565, state='running'
-2017-03-02 23:17:29,666 INFO (MainThread-31579) Stopping all queues
-2017-03-02 23:17:29,669 INFO (MainThread-31579) Feeding None into input queue
-2017-03-02 23:17:29,670 INFO (Thread-1-31579) next_batch() got None
-done feeding
-2017-03-02 23:17:29,683 INFO (MainThread-31579) Feeding None into output queue
-2017-03-02 23:17:29,684 INFO (MainThread-31579) Setting mgr.state to 'stopped'
-2017-03-02T23:17:29.684980 stopping supervisor
+2017-03-03T11:31:51.731334 session ready
+2017-03-03T11:31:55.032957 step: 100 accuracy: 0.949999988079
+2017-03-03 11:31:56,046 INFO (MainThread-31658) Processed 6144 items in partition
+2017-03-03 11:31:56,333 INFO (MainThread-31658) Connected to TFSparkNode.mgr on cn3, ppid=31541, state='running'
+2017-03-03 11:31:56,338 INFO (MainThread-31658) mgr.state='running'
+2017-03-03 11:31:56,338 INFO (MainThread-31658) Feeding partition <itertools.chain object at 0x2ba152aab910> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba152aa71d0>
+2017-03-03 11:32:05,182 INFO (MainThread-31658) Processed 6144 items in partition
+2017-03-03 11:32:08,736 INFO (MainThread-31658) Connected to TFSparkNode.mgr on cn3, ppid=31541, state='running'
+2017-03-03 11:32:08,741 INFO (MainThread-31658) mgr.state='running'
+2017-03-03 11:32:08,741 INFO (MainThread-31658) Feeding partition <itertools.chain object at 0x2ba152aab4d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba152aa71d0>
+2017-03-03 11:32:17,610 INFO (MainThread-31658) Processed 6144 items in partition
+2017-03-03 11:32:17,884 INFO (MainThread-31658) Connected to TFSparkNode.mgr on cn3, ppid=31541, state='running'
+2017-03-03 11:32:17,889 INFO (MainThread-31658) mgr.state='running'
+2017-03-03 11:32:17,889 INFO (MainThread-31658) Feeding partition <itertools.chain object at 0x2ba152aab4d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba152aa71d0>
+2017-03-03 11:32:26,765 INFO (MainThread-31658) Processed 6144 items in partition
 
 LogType:stdout
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
-LogLength:0
-Log Contents:
-
-
-
-Container: container_1488097649116_0009_01_000004 on cn3_34596
-================================================================
-LogType:stderr
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
-LogLength:10306
-Log Contents:
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/var/lib/hadoop-yarn/cache/yarn/nm-local-dir/usercache/zuxfoucault/filecache/31/spark-assembly_2.11-2.1.1-SNAPSHOT-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/usr/lib/zookeeper/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-17/03/02 23:16:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2017-03-02 23:16:40,186 INFO (MainThread-15936) TFSparkNode.reserve: {'authkey': UUID('03f3eef4-a71e-494a-8991-6794aaee6529'), 'worker_num': 1, 'host': 'cn3', 'tb_port': 0, 'addr': '/tmp/pymp-UvSsOi/listener-0LBppA', 'ppid': 15914, 'task_index': 0, 'job_name': 'worker', 'tb_pid': 0, 'port': 47960}
-2017-03-02 23:16:40,696 INFO (MainThread-15936) node: {'addr': ('big', 52696), 'task_index': 0, 'job_name': 'ps', 'authkey': UUID('c382119f-3101-484b-a6ba-37df4d2c11aa'), 'worker_num': 0, 'host': 'big', 'ppid': 11998, 'port': 39436, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,696 INFO (MainThread-15936) node: {'addr': '/tmp/pymp-UvSsOi/listener-0LBppA', 'task_index': 0, 'job_name': 'worker', 'authkey': UUID('03f3eef4-a71e-494a-8991-6794aaee6529'), 'worker_num': 1, 'host': 'cn3', 'ppid': 15914, 'port': 47960, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,696 INFO (MainThread-15936) node: {'addr': '/tmp/pymp-WwLHeH/listener-bn2KqP', 'task_index': 1, 'job_name': 'worker', 'authkey': UUID('efe42921-1f14-40e4-b054-a102a3ccd513'), 'worker_num': 2, 'host': 'cn1', 'ppid': 11097, 'port': 55827, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,696 INFO (MainThread-15936) node: {'addr': '/tmp/pymp-G3rCN8/listener-hbvimr', 'task_index': 2, 'job_name': 'worker', 'authkey': UUID('5ef1ffa9-177d-403b-80f0-3ceb0cdd2231'), 'worker_num': 3, 'host': 'cn2', 'ppid': 31565, 'port': 32937, 'tb_pid': 0, 'tb_port': 0}
-2017-03-02 23:16:40,704 INFO (MainThread-15936) Connected to TFSparkNode.mgr on cn3, ppid=15914, state='running'
-2017-03-02 23:16:40,915 INFO (MainThread-15936) Starting TensorFlow worker:0 on cluster node 1 on background thread
-2017-03-02 23:16:42,499 INFO (Thread-1-15936) 1: ======== worker:0 ========
-2017-03-02 23:16:42,499 INFO (Thread-1-15936) 1: Cluster spec: {'ps': ['big:39436'], 'worker': ['cn3:47960', 'cn1:55827', 'cn2:32937']}
-2017-03-02 23:16:42,499 INFO (Thread-1-15936) 1: Using CPU
-2017-03-02 23:16:42.500056: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:42.500081: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
-2017-03-02 23:16:42.500101: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
-D0302 23:16:42.500800752   15992 env_linux.c:77]             Warning: insecure environment read function 'getenv' used
-2017-03-02 23:16:42.510903: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job ps -> {0 -> big:39436}
-2017-03-02 23:16:42.510942: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job worker -> {0 -> localhost:47960, 1 -> cn1:55827, 2 -> cn2:32937}
-2017-03-02 23:16:42.511660: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:239] Started server with target: grpc://localhost:47960
-tensorflow model path: hdfs://default/user/zuxfoucault/mnist_model
-17/03/02 23:16:46 ERROR GPLNativeCodeLoader: Could not load native gpl library
-java.lang.UnsatisfiedLinkError: no gplcompression in java.library.path
-	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1886)
-	at java.lang.Runtime.loadLibrary0(Runtime.java:849)
-	at java.lang.System.loadLibrary(System.java:1088)
-	at com.hadoop.compression.lzo.GPLNativeCodeLoader.<clinit>(GPLNativeCodeLoader.java:32)
-	at com.hadoop.compression.lzo.LzoCodec.<clinit>(LzoCodec.java:71)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:270)
-	at org.apache.hadoop.conf.Configuration.getClassByNameOrNull(Configuration.java:2013)
-	at org.apache.hadoop.conf.Configuration.getClassByName(Configuration.java:1978)
-	at org.apache.hadoop.io.compress.CompressionCodecFactory.getCodecClasses(CompressionCodecFactory.java:128)
-	at org.apache.hadoop.io.compress.CompressionCodecFactory.<init>(CompressionCodecFactory.java:175)
-	at org.apache.hadoop.mapred.TextInputFormat.configure(TextInputFormat.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.apache.hadoop.util.ReflectionUtils.setJobConf(ReflectionUtils.java:106)
-	at org.apache.hadoop.util.ReflectionUtils.setConf(ReflectionUtils.java:75)
-	at org.apache.hadoop.util.ReflectionUtils.newInstance(ReflectionUtils.java:133)
-	at org.apache.spark.rdd.HadoopRDD.getInputFormat(HadoopRDD.scala:188)
-	at org.apache.spark.rdd.HadoopRDD$$anon$1.<init>(HadoopRDD.scala:245)
-	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:211)
-	at org.apache.spark.rdd.HadoopRDD.compute(HadoopRDD.scala:102)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.rdd.ZippedPartitionsRDD2.compute(ZippedPartitionsRDD.scala:89)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.rdd.UnionRDD.compute(UnionRDD.scala:105)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:63)
-	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
-	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
-	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
-	at org.apache.spark.scheduler.Task.run(Task.scala:99)
-	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-17/03/02 23:16:46 ERROR LzoCodec: Cannot load native-lzo without native-hadoop
-2017-03-02 23:16:47,237 INFO (MainThread-16034) Connected to TFSparkNode.mgr on cn3, ppid=15914, state='running'
-2017-03-02 23:16:47,242 INFO (MainThread-16034) mgr.state='running'
-2017-03-02 23:16:47,242 INFO (MainThread-16034) Feeding partition <itertools.chain object at 0x2ba4f97c4750> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba4f97cf1d0>
-2017-03-02 23:16:50.000112: I tensorflow/core/distributed_runtime/master_session.cc:1012] Start master session 0512ec2c715ee393 with config: 
-
-WARNING:tensorflow:Standard services need a 'logdir' passed to the SessionManager
-2017-03-02 23:16:50,071 WARNING (Thread-1-15936) Standard services need a 'logdir' passed to the SessionManager
-2017-03-02T23:16:50.072772 session ready
-2017-03-02T23:16:50.794804 step: 0 accuracy: 0.52999997139
-2017-03-02 23:16:54,945 INFO (MainThread-16034) Processed 6144 items in partition
-2017-03-02 23:16:55,233 INFO (MainThread-16034) Connected to TFSparkNode.mgr on cn3, ppid=15914, state='running'
-2017-03-02 23:16:55,238 INFO (MainThread-16034) mgr.state='running'
-2017-03-02 23:16:55,239 INFO (MainThread-16034) Feeding partition <itertools.chain object at 0x2ba4f97d2910> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba4f97cf1d0>
-2017-03-02T23:17:02.828616 step: 200 accuracy: 0.959999978542
-2017-03-02 23:17:03,985 INFO (MainThread-16034) Processed 6144 items in partition
-2017-03-02 23:17:04,263 INFO (MainThread-16034) Connected to TFSparkNode.mgr on cn3, ppid=15914, state='running'
-2017-03-02 23:17:04,269 INFO (MainThread-16034) mgr.state='running'
-2017-03-02 23:17:04,270 INFO (MainThread-16034) Feeding partition <itertools.chain object at 0x2ba4f97d24d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba4f97cf1d0>
-2017-03-02T23:17:11.112302 step: 300 accuracy: 0.949999988079
-2017-03-02 23:17:13,097 INFO (MainThread-16034) Processed 6144 items in partition
-2017-03-02 23:17:13,377 INFO (MainThread-16034) Connected to TFSparkNode.mgr on cn3, ppid=15914, state='running'
-2017-03-02 23:17:13,384 INFO (MainThread-16034) mgr.state='running'
-2017-03-02 23:17:13,384 INFO (MainThread-16034) Feeding partition <itertools.chain object at 0x2ba4f97d24d0> into input queue <multiprocessing.queues.JoinableQueue object at 0x2ba4f97cf1d0>
-2017-03-02T23:17:21.363297 step: 500 accuracy: 0.959999978542
-2017-03-02 23:17:22,106 INFO (MainThread-16034) Processed 6144 items in partition
-2017-03-02 23:17:29,678 INFO (MainThread-15936) Connected to TFSparkNode.mgr on cn3, ppid=15914, state='running'
-2017-03-02 23:17:29,678 INFO (MainThread-15936) Stopping all queues
-2017-03-02 23:17:29,682 INFO (MainThread-15936) Feeding None into input queue
-2017-03-02 23:17:29,683 INFO (Thread-1-15936) next_batch() got None
-done feeding
-2017-03-02 23:17:29,697 INFO (MainThread-15936) Feeding None into output queue
-2017-03-02 23:17:29,697 INFO (MainThread-15936) Setting mgr.state to 'stopped'
-2017-03-02T23:17:29.699468 stopping supervisor
-
-LogType:stdout
-Log Upload Time:Thu Mar 02 23:17:36 +0800 2017
+Log Upload Time:Fri Mar 03 12:01:23 +0800 2017
 LogLength:0
 Log Contents:
 
